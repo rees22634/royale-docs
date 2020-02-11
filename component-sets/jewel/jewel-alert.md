@@ -82,7 +82,7 @@ To close the window, click one of the buttons on the bottom `ControlBar`, or pro
 The `Alert` component uses the `CloseEvent.CLOSE` event when the user removes it from the application. You can attach callback listeners to the `CloseEvent.CLOSE` as follows:
 
 ```as3
-var alert:Alert = Alert.show("Do you want to save your changes?", "Save Changes", Alert.OK | Alert.NO);
+var alert:Alert = Alert.show("Do you want to save your changes?", "Save Changes", Alert.YES | Alert.NO);
 alert.addEventListener(CloseEvent.CLOSE, alertClickHandler);
 ```
 
